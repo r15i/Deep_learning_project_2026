@@ -1,2 +1,0 @@
-File,Task,Architecture,Dropout,Batch_Size,Loss,Accuracy,Precision,Recall,F1
-20260730_110149_resnet8_person_id_ep100_lr0.001_do0.1_bs128.pth,person_id,resnet8,0.1,32,0.25028961870649996,0.8345650938032974,0.8332384288038107,0.8345650938032974,0.8330325809577712

@@ -13,6 +13,18 @@ The project repository is structured to provide a robust, unified interface for 
     \item \textbf{Hyperstack Cloud Docker:} Uses the \textbf{\texttt{remote\_exec/deploy.py}} script to securely connect, synchronize the local codebase to the cloud via \textbf{\texttt{rsync}}, and dynamically provision or resume a GPU cloud instance via the Hyperstack API before interactively executing training inside a container while streaming the logs back (e.g., \textbf{\texttt{make train-hyperstack}}).
 \end{enumerate}
 
+\subsection{Repository Structure and Dataset Placement}
+The repository is modularly organized into the following key directories to separate the model logic from the execution environment:
+\begin{itemize}
+    \item \textbf{\texttt{architectures/}}: Contains the PyTorch definitions for the neural network models (e.g., \texttt{resnet.py}, \texttt{inception.py}, \texttt{transformer.py}).
+    \item \textbf{\texttt{core/}}: Houses the core functionalities, including the custom dataset classes, data augmentations, and evaluation/training loops (e.g., \texttt{dopplerdataset.py}, \texttt{evaluation.py}).
+    \item \textbf{\texttt{dataset/}}: The designated directory for the Doppler spectrogram dataset. \textbf{Important:} To ensure the data loaders function correctly, the raw dataset must be extracted and placed exactly at \texttt{dataset/data/doppler\_traces/}.
+    \item \textbf{\texttt{remote\_exec/}}: Contains the Python deployment and synchronization scripts responsible for interacting with the Hyperstack API and managing the cloud instances.
+    \item \textbf{\texttt{scripts/}}: Provides various utility scripts for integrating with Weights \& Biases, generating graphs, and performing system checks.
+    \item \textbf{\texttt{weights/}}: The destination directory where serialized PyTorch model checkpoints (\texttt{.pt} files) are automatically saved during training and loaded from during testing.
+    \item \textbf{\texttt{wandb/}}: Locally stores the synchronization logs for Weights \& Biases.
+\end{itemize}
+
 \subsection{Key Scripts and Configurations}
 The fundamental logic resides in independent, modular scripts, which the \texttt{Makefile} coordinates:
 \begin{itemize}

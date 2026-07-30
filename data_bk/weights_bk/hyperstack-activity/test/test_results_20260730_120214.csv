@@ -1,2 +1,0 @@
-File,Task,Architecture,Dropout,Batch_Size,Loss,Accuracy,Precision,Recall,F1
-20260730_114156_inception_activity_ep100_lr0.001_do0.5_bs128.pth,activity,inception,0.5,32,0.44334838653589326,0.8358275135794258,0.8612795625531695,0.8358275135794258,0.8389421130383156

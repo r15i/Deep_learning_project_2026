@@ -1,2 +1,0 @@
-File,Task,Architecture,Dropout,Batch_Size,Loss,Accuracy,Precision,Recall,F1
-20260730_111327_transformer_person_id_ep100_lr0.001_do0.1_bs128.pth,person_id,transformer,0.1,32,0.5631034917452119,0.6935758953951109,0.6911491519485938,0.6935758953951109,0.6921718937391668

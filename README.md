@@ -3,8 +3,8 @@
 This repository contains the official codebase and research paper evaluating various Deep Learning architectures on a Human Activity Recognition (HAR) system. The system leverages Doppler shifts extracted from commercial IEEE 802.11 (WiFi) Channel State Information (CSI) to identify both human activities and specific subjects in a non-invasive manner.
 
 ## Authors
-- **Emilio Risi**
-- **Davide Pimazzoni**
+- **Emilio Risi** (2122841)
+- **Davide Pimazzoni** (2160381)
 
 ## Tasks
 The project evaluates deep learning models on two primary tasks:

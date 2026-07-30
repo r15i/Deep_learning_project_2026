@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 21:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -496,39 +496,73 @@ ally pro-vi-sion or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 1824) in paragraph at lines 19--20
+\OT1/ptm/m/n/10 for the neu-ral net-work mod-els (e.g., \OT1/pcr/m/n/10 resnet.
+py\OT1/ptm/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 20--21
+[]\OT1/pcr/b/n/10 core/\OT1/ptm/m/n/10 : Houses the core func-tion-al-i-ties, i
+n-clud-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]\OT1/pcr/b/n/10 dataset/\OT1/ptm/m/n/10 : The des-ig-nated di-rec-tory for th
+e
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 Doppler spec-tro-gram dataset. \OT1/ptm/b/n/10 Im-por-tant: \OT
+1/ptm/m/n/10 To
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 en-sure the data load-ers func-tion cor-rectly, the raw
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 21--22
+\OT1/ptm/m/n/10 dataset must be ex-tracted and placed ex-actly at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 []\OT1/pcr/m/n/10 train.py\OT1/ptm/m/n/10 : The pri-mary train-ing pipeline. It
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 \OT1/ptm/m/n/10 dy-nam-i-cally parses ar-gu-ments for ar-chi-tec-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 \OT1/ptm/m/n/10 (\OT1/pcr/m/n/10 resnet8\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 incep
 tion\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 transformer\OT1/ptm/m/n/10 ), task
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
 []\OT1/pcr/m/n/10 check_wandb.py \OT1/ptm/m/n/10 &
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 21--22
+Underfull \hbox (badness 2165) in paragraph at lines 33--34
 \OT1/ptm/m/n/10 that query the Weights & Bi-ases API to re-trieve
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 27--33
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 39--45
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 []\OT1/pcr/b/n/10 make pull-hyperstack\OT1/ptm/m/n/10 : Re-trieves all trained
  []
 
@@ -577,7 +611,7 @@ s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb>
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (8 pages, 3973775 bytes).
+Output written on template.pdf (8 pages, 3975265 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,7 +405,7 @@ File: ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.
 01_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_resnet8_20260730_110146_resnet8_
 activity_ep100_lr0.001_do0.5_bs128.png  used on input line 94.
-(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+(pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_lr0.0
 01_do0.5_bs128.png, id=50, 722.7pt x 578.16pt>
 File: ./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_
@@ -414,7 +414,7 @@ lr0.001_do0.5_bs128.png Graphic file (type png)
 r0.001_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_inception_20260730_114156_incept
 ion_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 98.
-(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+(pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep100_l
 r0.001_do0.5_bs128.png, id=51, 722.7pt x 578.16pt>
 File: ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep
@@ -423,7 +423,7 @@ File: ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep
 00_lr0.001_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_transformer_20260730_112040_tran
 sformer_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 102.
-(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+(pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.001
 _do0.1_bs128.png, id=52, 722.7pt x 578.16pt>
 File: ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr
@@ -432,7 +432,7 @@ File: ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr
 .001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_resnet8_20260730_110149_resnet8
 _person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 112.
-(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+(pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep100_lr0
 .001_do0.1_bs128.png, id=53, 722.7pt x 578.16pt>
 File: ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep10
@@ -441,7 +441,7 @@ File: ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep10
 _lr0.001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_inception_20260730_112501_incep
 tion_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 116.
-(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+(pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_ep100
 _lr0.001_do0.1_bs128.png, id=54, 722.7pt x 578.16pt>
 File: ./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_
@@ -450,18 +450,21 @@ ep100_lr0.001_do0.1_bs128.png Graphic file (type png)
 p100_lr0.001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_transformer_20260730_111327_tra
 nsformer_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 120.
-(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+(pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[]\OT1/ptm/m/n/9 (c) |Trans-former (Per-son
+ []
+
 (./usage.tex [6 <./figures/loss_activity_combined.png> <./figures/loss_person_c
 ombined.png> <./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep
 100_lr0.001_do0.5_bs128.png> <./figures/cm_activity_inception_20260730_114156_i
 nception_activity_ep100_lr0.001_do0.5_bs128.png> <./figures/cm_activity_transfo
-rmer_20260730_112040_transformer_activity_ep100_lr0.001_do0.5_bs128.png>]
-[7
-
- <./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.00
-1_do0.1_bs128.png> <./figures/cm_person_id_inception_20260730_112501_inception_
-person_id_ep100_lr0.001_do0.1_bs128.png> <./figures/cm_person_id_transformer_20
-260730_111327_transformer_person_id_ep100_lr0.001_do0.1_bs128.png>]
+rmer_20260730_112040_transformer_activity_ep100_lr0.001_do0.5_bs128.png> <./fig
+ures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.001_do0.1
+_bs128.png> <./figures/cm_person_id_inception_20260730_112501_inception_person_
+id_ep100_lr0.001_do0.1_bs128.png> <./figures/cm_person_id_transformer_20260730_
+111327_transformer_person_id_ep100_lr0.001_do0.1_bs128.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
 []\OT1/ptm/b/n/10 Hyperstack Cloud Docker: \OT1/ptm/m/n/10 Uses the
  []
@@ -531,7 +534,7 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8
+[7
 
 ] (./template.aux)
  ***********
@@ -564,10 +567,10 @@ s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb>
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (8 pages, 3973633 bytes).
+Output written on template.pdf (7 pages, 3973345 bytes).
 PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
+ 159 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

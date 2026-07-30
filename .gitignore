@@ -19,7 +19,6 @@ remote_exec/logs/
 remote_exec/__pycache__/
 output.txt
 .DS_Store
-.dockerignore
 .env.example
 /data_bk
 /dataset

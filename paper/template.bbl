@@ -1,0 +1,49 @@
+\begin{thebibliography}{1}
+
+\bibitem{Vaswani_2017_NIPS}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' in {\em
+  Advances in Neural Information Processing Systems (NIPS)}, 2017.
+
+\bibitem{He_2016_CVPR}
+K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
+  recognition,'' in {\em IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)}, pp.~770--778, 2016.
+
+\bibitem{Kim_2025_Processes}
+S.-U. Kim and J.-Y. Kim, ``Improving human activity recognition through
+  1d-resnet: A wearable wristband for 14 workout movements,'' {\em Processes},
+  vol.~13, no.~1, p.~207, 2025.
+
+\bibitem{Ronald_2021_Access}
+M.~Ronald, A.~Poulose, and D.~S. Han, ``isplinception: An inception-resnet deep
+  learning architecture for human activity recognition,'' {\em IEEE Access},
+  vol.~9, pp.~68985--69001, 2021.
+
+\bibitem{Meneghello_2023_TMC}
+F.~Meneghello, D.~Garlisi, N.~Dal~Fabbro, I.~Tinnirello, and M.~Rossi, ``Sharp:
+  Environment and person independent activity recognition with commodity ieee
+  802.11 access points,'' {\em IEEE Transactions on Mobile Computing}, vol.~22,
+  pp.~6160--6175, Oct. 2023.
+
+\bibitem{Meneghello_2023_ComMag}
+F.~Meneghello, D.~Garlisi, N.~Dal~Fabbro, I.~Tinnirello, and M.~Rossi, ``A csi
+  dataset for wireless human sensing on 80 mhz wi-fi channels,'' {\em IEEE
+  Communications Magazine}, vol.~61, pp.~146--152, Sept. 2023.
+
+\bibitem{Abdelnasser_2015_MobiHoc}
+H.~Abdelnasser, K.~A. Harras, and M.~Youssef, ``Ubibreathe: A ubiquitous
+  non-invasive wifi-based breathing estimator,'' in {\em 16th ACM International
+  Symposium on Mobile Ad Hoc Networking and Computing (MobiHoc)}, pp.~277--286,
+  2015.
+
+\bibitem{Li_2022_Sensors}
+Y.~Li and L.~Wang, ``Human activity recognition based on residual network and
+  bilstm,'' {\em Sensors (Basel)}, vol.~22, no.~2, p.~635, 2022.
+
+\bibitem{Zhang_2021_IOP}
+J.~Zhang, S.~Qiao, Z.~Lin, and Y.~Zhou, ``Human activity recognition based on
+  residual network,'' {\em IOP Conference Series: Earth and Environmental
+  Science}, vol.~693, 2021.
+
+\end{thebibliography}

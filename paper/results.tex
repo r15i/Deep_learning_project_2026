@@ -1,0 +1,34 @@
+% !TEX root = template.tex
+\section{Experiments and Results}
+\label{sec:results}
+
+\subsection{Hardware and Execution Setup}
+The experiments and final testing were executed on a dedicated Hyperstack cloud virtual machine equipped with an NVIDIA L40 GPU featuring 48 GB of VRAM. This substantial memory footprint permitted high-throughput parallel training across all configurations. Real-time telemetry, model checkpointing, and comprehensive training/validation metrics were continuously logged and monitored using the Weights \& Biases (W\&B) platform. To ensure strict isolation, the test sets consisted purely of completely unseen subjects, testing true model generalization rather than artificial memorization.
+
+Detailed instructions for reproducing these environments and invoking the execution scripts can be found in Appendix \ref{sec:usage}.
+
+\subsection{Performance Analysis}
+The Micro-ResNet (`ResNet8`) proved to be the optimal architecture, consistently outperforming the Transformer and Inception models.
+
+\begin{table}[h]
+\centering
+\caption{Strict-Isolation Test Metrics (L40 GPU)}
+\begin{tabular}{|l|l|c|l|}
+\hline
+\textbf{Task} & \textbf{Architecture} & \textbf{Accuracy} & \textbf{Status} \\
+\hline
+Activity & ResNet8 & $85.78\%$ & Converged \\
+Activity & Inception & $83.58\%$ & Converged \\
+Activity & Transformer & $62.94\%$ & Overfitted \\
+\hline
+Person ID & ResNet8 & $83.45\%$ & Converged \\
+Person ID & Inception & $80.50\%$ & Converged \\
+Person ID & Transformer & $69.35\%$ & Overfitted \\
+\hline
+\end{tabular}
+\label{tab:metrics}
+\end{table}
+
+The Transformer severely overfitted the training set but failed to generalize. In contrast, ResNet8's 2D CNN inductive biases mapped perfectly to the Doppler spectrograms, effectively extracting localized frequency-time signatures.
+
+All confusion matrices and training/validation loss graphs for the Activity Recognition and Person Identification tasks are provided in the Appendix.

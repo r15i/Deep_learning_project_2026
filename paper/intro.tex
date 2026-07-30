@@ -1,0 +1,19 @@
+% !TEX root = template.tex
+\section{Introduction}
+\label{sec:introduction}
+
+In recent years, the rapid growth of the Internet of Things (IoT) has driven the development of innovative wireless systems and methodologies. Within healthcare, these wireless devices play a crucial role in monitoring vital parameters [6]. A key research focus is Human Activity Recognition (HAR), which leverages the Doppler shifts in Wi-Fi signals to detect human presence and movement. Implementing these systems is particularly valuable for assisted-living applications in healthcare environments [4].
+
+Since the HAR is a classification problem, a deep-learning architecture like a ResNet [1] can be useful for this kind of task. ResNet addresses the optimization challenges of deep neural topologies by incorporating identity shortcut connections that mitigate vanishing gradients during backpropagation. In Human Activity Recognition (HAR) domains, standard feed-forward architectures often struggle with raw sensor signals. The deployment of modified 1D-ResNet frameworks [2] effectively replaces complex manual feature engineering with hierarchical, end-to-end spatial-temporal feature extraction directly from multivariate time-series data. Furthermore, academic literature highlights the efficacy of integrating residual topologies with recurrent architectures, such as Bidirectional Long Short-Term Memory (BiLSTM) modules [7], or multiscale filter paradigms, such as Inception blocks [3]. These hybrid models seamlessly capture long-range temporal dependencies and fine-grained movement dynamics across complex action sets. Consequently, ResNet-based paradigms ensure stable convergence, enhance classification fidelity, and provide robust generalization.
+
+In this report, we evaluate the performance of three distinct deep learning architectures---a Micro-ResNet, a Multi-scale Inception network, and a Transformer-Encoder---on the dataset described in [4] and [5]. We expand the scope of the analysis beyond standard Human Activity Recognition (classifying activities such as walking (W), running (R), jumping (J), sitting (L), and empty room (E)) by also formulating a Contrastive Person Identification task to differentiate between specific subjects. Through extensive evaluation using loss metrics, accuracy, and confusion matrices, we demonstrate that while convolutional architectures (ResNet and Inception) excel at extracting robust representations from Doppler traces, the Transformer-Encoder fails to generalize. Specifically, Doppler spectrograms are highly sparse representations; without the strong inductive spatial locality bias inherent to convolutions, the Transformer's self-attention mechanism expends capacity attempting to correlate empty space, leading to severe structural overfitting and a collapse in performance on unseen physical environments.
+
+The structure of the rest of the report is the following one:
+\begin{enumerate}
+    \item \textbf{Related work:} in Section II we describe the main literature regarding ResNet and Inception architectures and their applications in HAR systems;
+    \item \textbf{Processing pipeline \& Data:} in Section III and IV we describe how the raw data are sanitized, augmented, and processed for the two respective classification tasks;
+    \item \textbf{Learning framework:} in Section V we detail the structure of the ResNet, Inception, and Transformer architectures;
+    \item \textbf{Results:} in Section VI we show the results of the analysis across all models and tasks.
+\end{enumerate}
+
+The work was divided in the following way: both the authors of this report defined the architectures of both neural networks and the processing pipeline. Davide Pimazzoni was responsible for finding articles regarding the architectures under examination; Emilio Risi handled the data collection and dataset creation.

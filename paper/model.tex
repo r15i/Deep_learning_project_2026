@@ -1,0 +1,101 @@
+% !TEX root = template.tex
+\section{Learning Framework}
+\label{sec:architecture}
+
+We investigate three distinct models for processing the high-resolution Doppler spectrograms, focusing heavily on ResNet architectures.
+
+\subsection{ResNet Architecture}
+In this section there are detailed descriptions of each block of the Resnet architecture adopted for the project. The architecture of the resnet is developed in the following way:
+
+\begin{enumerate}
+    \item \textbf{Input Preprocessing and Channel Injection Block:} The raw input batch tensor $x \in \mathbb{R}^{B \times H \times W}$ (where $B$ denotes batch size, $H$ represents time sequences, and $W$ represents feature dimensions) enters the forward pass and undergoes spatial reshaping via \texttt{x.unsqueeze(1)}. This transforms the tensor into a single-channel 2D representation $x \in \mathbb{R}^{B \times 1 \times H \times W}$, enabling 2D spatial convolution operators to ingest Doppler spectrograms directly;
+    
+    \item \textbf{Convolutional Stem Block:} The single-channel tensor $x$ passes sequentially through \texttt{conv1}, \texttt{bn1}, \texttt{relu}, and \texttt{maxpool}:
+    \begin{itemize}
+        \item \texttt{conv1} ($7 \times 7$ kernel, stride $s = 2$, padding $p = 3$): Downsamples spatial dimensions while projecting 1 input channel to $C_{base}$ channels:
+        \begin{equation}
+        x_{conv1} = W_{stem} * x
+        \end{equation}
+        \item \texttt{bn1}: Standardizes activations per channel across the mini-batch to reduce internal covariate shift:
+        \begin{equation}
+        \hat{x} = \frac{x_{conv1} - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}, \quad y_{bn1} = \gamma\hat{x} + \beta
+        \end{equation}
+        \item \texttt{relu}: Applies element-wise rectification $\text{ReLU}(y) = \max(0, y)$;
+        \item \texttt{maxpool} ($3 \times 3$ pool, stride $s = 2$): Reduces spatial dimensions by half.
+    \end{itemize}
+    
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=\linewidth]{resnet_architecture.png}
+        \caption{Resnet architecture}
+        \label{fig:resnet_architecture}
+    \end{figure}
+    
+    \item \textbf{Residual Deep Feature Extraction Stages:} The tensor flows through sequential residual stages where spatial dimensions shrink by factor 2 while channel depth doubles ($C_{out} = C_{in} \cdot 2$). Within each block:
+    \begin{itemize}
+        \item \textbf{Residual Branch Processing:} Input $x_{block}$ passes through two $3 \times 3$ convolutions with intermediate batch normalization and ReLU activation:
+        \begin{equation}
+        \mathcal{F}(x_{block}) = \text{BN}_2(W_2 * \text{ReLU}(\text{BN}_1(W_1 * x_{block})))
+        \end{equation}
+        \item \textbf{Shortcut Projection:} The input is saved as $h(x_{block}) = x_{block}$. If dimensions change, a projection adjusts dimensions via $1 \times 1$ convolution: $h(x_{block}) = \text{BN}_{ds}(W_{ds} * x_{block})$;
+        \item \textbf{Residual Addition and Regularization:} The shortcut is added element-wise before non-linear activation:
+        \begin{equation}
+        y_{block} = \text{ReLU}(\mathcal{F}(x_{block}) + h(x_{block}))
+        \end{equation}
+        Stochastic feature dropout zeroes activations with probability $p = \text{dropout\_rate}$ to prevent co-adaptation;
+    \end{itemize}
+    
+    \item \textbf{Global Temporal Aggregation and Linear Head:} Spatial dimensions of feature maps are collapsed into a scalar per channel by Adaptive Average Pooling:
+    \begin{equation}
+    x_{pool}(c) = \frac{1}{H' \times W'} \sum_{i=1}^{H'} \sum_{j=1}^{W'} x(c, i, j)
+    \end{equation}
+    The resulting tensor is flattened and projected to category logits $z$ via a fully connected layer.
+    
+    \item \textbf{Weight Initialization:} Initial weights of convolutional and linear layers are initialized using Xavier uniform initialization to bound layer output variances.
+\end{enumerate}
+
+\subsection{Inception Baseline Architecture}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=7.5cm, keepaspectratio]{inception_architecture.png}
+    \caption{Simplified Multi-Scale Inception architecture baseline.}
+    \label{fig:inception_architecture}
+\end{figure}
+
+To provide a robust multiscale baseline, we additionally developed a simplified SHARP Inception network (Figure \ref{fig:inception_architecture}). This model diverges from sequential deep feature extraction by leveraging parallel convolutional pathways of varying receptive fields within the same layer. The core Inception Module splits the incoming feature map into three distinct branches:
+\begin{itemize}
+    \item A structural downsampling branch utilizing a $2 \times 2$ Max Pooling operation with stride 2.
+    \item A localized feature extraction branch applying a standard $2 \times 2$ convolution with stride 2.
+    \item A deep contextual cascade comprising a $1 \times 1$ dimension-reduction convolution, followed by a $2 \times 2$ and a wider $4 \times 4$ convolution, expanding the receptive field to capture broader temporal-frequency relationships.
+\end{itemize}
+The outputs from these parallel branches are then spatially interpolated (to correct sub-pixel rounding discrepancies) and concatenated along the channel dimension. A final $1 \times 1$ convolution rapidly reduces the channel depth before propagating to the subsequent block.
+
+\subsection{Transformer-Encoder Architecture \cite{Vaswani_2017_NIPS}}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{encoder_architecture.png}
+    \caption{Transformer-Encoder architecture.}
+    \label{fig:encoder_architecture}
+\end{figure}
+
+As depicted in Figure \ref{fig:encoder_architecture}, the input sequence is initially processed by a Convolutional STEM layer to capture local spatial-temporal patterns and downsample the sequence length by a factor of four, easing the $O(n^2)$ computational complexity of subsequent attention steps. This STEM structure consists of two 2D convolutional layers with batch normalization and Gaussian Error Linear Unit ($\text{GELU}$) activations:
+
+$$\text{Gelu}(x) = x \cdot \frac{1}{2} \left[1 + \text{erf}\left(\frac{x}{\sqrt{2}}\right)\right]$$
+
+where $\text{erf}(x) = \frac{2}{\sqrt{\pi}} \int_{0}^{x}{\exp(-t^2)dt}$. The first convolution accepts the Doppler spectrogram $\mathbf{x} \in \mathbb{R}^{1 \times F \times T}$ using parameters $K = 5 \times 5, P = 2 \times 2, S = 2 \times 2$, projecting it to 16 channels. The second layer operates with parameters $K = 3 \times 3, P = 1 \times 1, S = 2 \times 2$, expanding to 32 channels. The spatial frequency dimension is then flattened and projected to the Transformer's $d_{model}$ dimension. After the STEM processing, a learnable \textbf{[CLS]} token is concatenated to aggregate global information for classification. Next, positional temporal information is injected using an alternating matrix $\mathbf{X}$ of size $J \times M$:
+
+$$\mathbf{X}_{(k, 2i)} = \sin\left(\frac{k}{10000^{\frac{2i}{M}}}\right), \quad \mathbf{X}_{(k, 2i+1)} = \cos\left(\frac{k}{10000^{\frac{2i}{M}}}\right)$$
+
+where $k$ is the token position index ($k = 0, \dots, J-1$) and $i$ is the dimension index ($i = 0, \dots, \frac{M}{2} - 1$). The enriched tensor passes through two identical encoder layers. Each layer executes Layer Normalization followed by self-attention computation:
+
+$$\mathbf{A} = \text{softmax}\left(\frac{\mathbf{Q}\mathbf{K}^{T}}{\sqrt{d_k}} + \mathbf{bias}\right) \mathbf{V}$$
+
+where $\mathbf{Q} = \mathbf{x_{q}} \mathbf{W^{Q}}$, $\mathbf{K} = \mathbf{x_{k}} \mathbf{W^{K}}$, and $\mathbf{V} = \mathbf{x_{v}} \mathbf{W^{V}}$. After adding a residual connection and re-normalizing, the tensor enters a feed-forward network comprising a linear layer with $\text{GELU}$ activation, dropout, and a final linear projection. Ultimately, the representation of the \textbf{[CLS]} token is extracted from the final layer and passed to the classification head, where a Cross-entropy function is applied, in order to extract the logits.
+
+\subsection{Architecture Comparison and Transformer Limitations}
+While the Transformer has significant representational power, it is severely disadvantaged by the spatial sparsity of the frequency bins in Doppler spectrograms. Transformers lack a strong built-in assumption of "locality," expending computational resources finding correlations across the empty black space within the sparse data. Consequently, it memorizes the training data perfectly (close to $100\%$ training accuracy) but completely collapses on the validation set of strictly unseen subjects due to structural overfitting. 
+
+\subsection{Task-Dependent Classification Head}
+For the Activity Recognition task, the shared backbone outputs to a standard linear classification head trained with Cross-Entropy Loss to classify 5 distinct activities. For the Person Identification task, the problem is formulated through Contrastive Learning. The backbone outputs to a 128-dimensional embedding space supervised by Triplet Margin Loss. At inference time, a K-Nearest Neighbors ($k=5$) classifier evaluates the unseen subject embeddings.

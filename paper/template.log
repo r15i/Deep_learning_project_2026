@@ -1,0 +1,569 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 17:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**template.tex
+(./template.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(./IEEEtran.cls
+Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen148
+\@IEEEtrantmpdimenB=\dimen149
+\@IEEEtrantmpcountA=\count275
+\@IEEEtrantmpcountB=\count276
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+68.
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen150
+-- This is a 10 point document.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) o
+n input line 588.
+\CLASSINFOnormalsizebaselineskip=\dimen151
+\CLASSINFOnormalsizeunitybaselineskip=\dimen152
+\IEEEnormaljot=\dimen153
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+\IEEEilabelindentA=\dimen154
+\IEEEilabelindentB=\dimen155
+\IEEEilabelindent=\dimen156
+\IEEEelabelindent=\dimen157
+\IEEEdlabelindent=\dimen158
+\IEEElabelindent=\dimen159
+\IEEEiednormlabelsep=\dimen160
+\IEEEiedmathlabelsep=\dimen161
+\IEEEiedtopsep=\skip49
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@IEEEsubequation=\count281
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count282
+\c@table=\count283
+\@IEEEeqnnumcols=\count284
+\@IEEEeqncolcnt=\count285
+\@IEEEsubeqnnumrollback=\count286
+\@IEEEtmpitemindent=\dimen162
+\c@IEEEbiography=\count287
+\@IEEEtranrubishbin=\box53
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen163
+))
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen164
+)
+(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count288
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count289
+\leftroot@=\count290
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count291
+\DOTSCASE@=\count292
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen165
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count293
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count294
+\dotsspace@=\muskip17
+\c@parentequation=\count295
+\dspbrk@lvl=\count296
+\tag@help=\toks19
+\row@=\count297
+\column@=\count298
+\maxfields@=\count299
+\andhelp@=\toks20
+\eqnshift@=\dimen166
+\alignsep@=\dimen167
+\tagshift@=\dimen168
+\tagwidth@=\dimen169
+\totwidth@=\dimen170
+\lineht@=\dimen171
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen174
+\captionmargin=\dimen175
+\caption@leftmargin=\dimen176
+\caption@rightmargin=\dimen177
+\caption@width=\dimen178
+\caption@indent=\dimen179
+\caption@parindent=\dimen180
+\caption@hangindent=\dimen181
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count300
+\c@continuedfloat=\count301
+) (/usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count302
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count303
+)
+** ATTENTION: Overriding command lockouts (line 22).
+\c@remark=\count304
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count305
+)
+(./template.aux)
+\openout1 = `template.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+ (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count306
+\scratchdimen=\dimen182
+\scratchbox=\box56
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen183
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks25
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
+0.
+
+(/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+) (./intro.tex) (./related.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex
+.map}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+]) (./data.tex
+<./figures/processing_pipeline.png, id=10, 2180.145pt x 726.715pt>
+File: ./figures/processing_pipeline.png Graphic file (type png)
+<use ./figures/processing_pipeline.png>
+Package pdftex.def Info: ./figures/processing_pipeline.png  used on input line 
+6.
+(pdftex.def)             Requested size: 252.0pt x 83.99738pt.
+
+Underfull \hbox (badness 2181) in paragraph at lines 14--15
+[]\OT1/ptm/b/n/10 Phase san-i-ti-za-tion and com-put-ing the Doppler
+ []
+
+<./figures/labels.png, id=11, 1091.277pt x 232.4685pt>
+File: ./figures/labels.png Graphic file (type png)
+<use ./figures/labels.png>
+Package pdftex.def Info: ./figures/labels.png  used on input line 23.
+(pdftex.def)             Requested size: 252.0pt x 53.67946pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2 <./figures/processing_pipeline.png (PNG copy)> <./figures/labels.png>]) (.
+/model.tex
+Underfull \hbox (badness 3039) in paragraph at lines 11--12
+\OT1/ptm/m/n/10 and $\OML/cmm/m/it/10 W$ \OT1/ptm/m/n/10 rep-re-sents fea-ture 
+di-men-sions) en-ters the
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 11--12
+\OT1/ptm/m/n/10 for-ward pass and un-der-goes spa-tial re-shap-ing via
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+[]\OT1/pcr/m/n/10 relu\OT1/ptm/m/n/10 : Ap-plies element-wise rec-ti-fi-ca-tion
+
+ []
+
+<./figures/resnet_architecture.png, id=31, 1780.6525pt x 890.32625pt>
+File: ./figures/resnet_architecture.png Graphic file (type png)
+<use ./figures/resnet_architecture.png>
+Package pdftex.def Info: ./figures/resnet_architecture.png  used on input line 
+29.
+(pdftex.def)             Requested size: 252.0pt x 125.98976pt.
+
+Underfull \hbox (badness 3579) in paragraph at lines 40--41
+[]\OT1/ptm/b/n/10 Shortcut Pro-jec-tion: \OT1/ptm/m/n/10 The in-put is saved as
+
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 44--46
+\OT1/ptm/m/n/10 prob-a-bil-ity $\OML/cmm/m/it/10 p \OT1/cmr/m/n/10 = []$ \OT1/p
+tm/m/n/10 to pre-vent co-
+ []
+
+<./figures/inception_architecture.png, id=32, 419.5675pt x 770.88pt>
+File: ./figures/inception_architecture.png Graphic file (type png)
+<use ./figures/inception_architecture.png>
+Package pdftex.def Info: ./figures/inception_architecture.png  used on input li
+ne 61.
+(pdftex.def)             Requested size: 116.14006pt x 213.39566pt.
+<./figures/encoder_architecture.png, id=33, 770.88pt x 1156.32pt>
+File: ./figures/encoder_architecture.png Graphic file (type png)
+<use ./figures/encoder_architecture.png>
+Package pdftex.def Info: ./figures/encoder_architecture.png  used on input line
+ 78.
+(pdftex.def)             Requested size: 252.0pt x 377.98741pt.
+[4 <./figures/resnet_architecture.png (PNG copy)> <./figures/inception_architec
+ture.png>]
+Underfull \hbox (badness 1708) in paragraph at lines 98--99
+[]\OT1/ptm/m/n/10 While the Trans-former has sig-nif-i-cant rep-re-sen-ta-tiona
+l
+ []
+
+) (./results.tex [5 <./figures/encoder_architecture.png>]) (./conclusions.tex)
+Underfull \hbox (badness 5741) in paragraph at lines 53--54
+[]\OT1/ptm/m/n/10 This ap-pendix pro-vides the train-ing and val-i-da-tion
+ []
+
+<./figures/loss_activity_combined.png, id=47, 722.7pt x 433.62pt>
+File: ./figures/loss_activity_combined.png Graphic file (type png)
+<use ./figures/loss_activity_combined.png>
+Package pdftex.def Info: ./figures/loss_activity_combined.png  used on input li
+ne 58.
+(pdftex.def)             Requested size: 252.0pt x 151.20026pt.
+<./figures/loss_person_combined.png, id=48, 722.7pt x 433.62pt>
+File: ./figures/loss_person_combined.png Graphic file (type png)
+<use ./figures/loss_person_combined.png>
+Package pdftex.def Info: ./figures/loss_person_combined.png  used on input line
+ 65.
+(pdftex.def)             Requested size: 252.0pt x 151.20026pt.
+
+Overfull \hbox (22.58269pt too wide) in paragraph at lines 73--87
+ [][] 
+ []
+
+<./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.001_d
+o0.5_bs128.png, id=49, 722.7pt x 578.16pt>
+File: ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.
+001_do0.5_bs128.png Graphic file (type png)
+<use ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.0
+01_do0.5_bs128.png>
+Package pdftex.def Info: ./figures/cm_activity_resnet8_20260730_110146_resnet8_
+activity_ep100_lr0.001_do0.5_bs128.png  used on input line 94.
+(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+<./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_lr0.0
+01_do0.5_bs128.png, id=50, 722.7pt x 578.16pt>
+File: ./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_
+lr0.001_do0.5_bs128.png Graphic file (type png)
+<use ./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_l
+r0.001_do0.5_bs128.png>
+Package pdftex.def Info: ./figures/cm_activity_inception_20260730_114156_incept
+ion_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 98.
+(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+<./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep100_l
+r0.001_do0.5_bs128.png, id=51, 722.7pt x 578.16pt>
+File: ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep
+100_lr0.001_do0.5_bs128.png Graphic file (type png)
+<use ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep1
+00_lr0.001_do0.5_bs128.png>
+Package pdftex.def Info: ./figures/cm_activity_transformer_20260730_112040_tran
+sformer_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 102.
+(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+<./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.001
+_do0.1_bs128.png, id=52, 722.7pt x 578.16pt>
+File: ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr
+0.001_do0.1_bs128.png Graphic file (type png)
+<use ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0
+.001_do0.1_bs128.png>
+Package pdftex.def Info: ./figures/cm_person_id_resnet8_20260730_110149_resnet8
+_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 112.
+(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+<./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep100_lr0
+.001_do0.1_bs128.png, id=53, 722.7pt x 578.16pt>
+File: ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep10
+0_lr0.001_do0.1_bs128.png Graphic file (type png)
+<use ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep100
+_lr0.001_do0.1_bs128.png>
+Package pdftex.def Info: ./figures/cm_person_id_inception_20260730_112501_incep
+tion_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 116.
+(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+<./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_ep100
+_lr0.001_do0.1_bs128.png, id=54, 722.7pt x 578.16pt>
+File: ./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_
+ep100_lr0.001_do0.1_bs128.png Graphic file (type png)
+<use ./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_e
+p100_lr0.001_do0.1_bs128.png>
+Package pdftex.def Info: ./figures/cm_person_id_transformer_20260730_111327_tra
+nsformer_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 120.
+(pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
+(./usage.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[]\OT1/ptm/b/n/10 Hyperstack Cloud Docker: \OT1/ptm/m/n/10 Uses the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+\OT1/pcr/b/n/10 remote_exec/deploy.py \OT1/ptm/m/n/10 script to se-curely
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 12--13
+\OT1/ptm/m/n/10 con-nect, syn-chro-nize the lo-cal code-base to the
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 12--13
+\OT1/ptm/m/n/10 cloud via \OT1/pcr/b/n/10 rsync\OT1/ptm/m/n/10 , and dy-nam-i-c
+ally pro-vi-sion or
+ []
+
+[6 <./figures/loss_activity_combined.png> <./figures/loss_person_combined.png> 
+<./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.001_d
+o0.5_bs128.png> <./figures/cm_activity_inception_20260730_114156_inception_acti
+vity_ep100_lr0.001_do0.5_bs128.png> <./figures/cm_activity_transformer_20260730
+_112040_transformer_activity_ep100_lr0.001_do0.5_bs128.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+[]\OT1/pcr/m/n/10 train.py\OT1/ptm/m/n/10 : The pri-mary train-ing pipeline. It
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\OT1/ptm/m/n/10 dy-nam-i-cally parses ar-gu-ments for ar-chi-tec-ture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\OT1/ptm/m/n/10 (\OT1/pcr/m/n/10 resnet8\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 incep
+tion\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 transformer\OT1/ptm/m/n/10 ), task
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]\OT1/pcr/m/n/10 check_wandb.py \OT1/ptm/m/n/10 &
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 20--21
+\OT1/ptm/m/n/10 that query the Weights & Bi-ases API to re-trieve
+ []
+
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 26--32
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[]\OT1/pcr/b/n/10 make pull-hyperstack\OT1/ptm/m/n/10 : Re-trieves all trained
+ []
+
+) (./template.bbl)
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[7 <./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.
+001_do0.1_bs128.png> <./figures/cm_person_id_inception_20260730_112501_inceptio
+n_person_id_ep100_lr0.001_do0.1_bs128.png> <./figures/cm_person_id_transformer_
+20260730_111327_transformer_person_id_ep100_lr0.001_do0.1_bs128.png>]
+(./template.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 4984 strings out of 469515
+ 87996 string characters out of 5470807
+ 487452 words of memory out of 5000000
+ 33580 multiletter control sequences out of 15000+600000
+ 669408 words of font info for 123 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 57i,9n,65p,1208b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb>
+</usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dis
+t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
+/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
+e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on template.pdf (7 pages, 3973543 bytes).
+PDF statistics:
+ 159 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+

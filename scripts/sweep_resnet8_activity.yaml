@@ -1,0 +1,27 @@
+program: train.py
+method: bayes
+metric:
+  name: val/Accuracy
+  goal: maximize
+parameters:
+  arch:
+    value: resnet8
+  task:
+    value: activity
+  lr:
+    values: [0.001, 0.0005, 0.0001]
+  dropout:
+    values: [0.1, 0.3, 0.5]
+  batch-size:
+    values: [64, 128, 256]
+command:
+  - ${env}
+  - uv
+  - run
+  - python
+  - ${program}
+  - "--dataset-path"
+  - "dataset/data/doppler_traces"
+  - "--epochs"
+  - "100"
+  - ${args}

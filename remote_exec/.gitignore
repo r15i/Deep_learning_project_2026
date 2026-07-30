@@ -1,0 +1,7 @@
+*.lock
+*.mp4
+*.pdf
+*.pth
+__pycache__/
+config.env
+.env

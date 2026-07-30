@@ -21,7 +21,7 @@ In this section there are detailed descriptions of each block of the Resnet arch
         \hat{x} = \frac{x_{conv1} - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}, \quad y_{bn1} = \gamma\hat{x} + \beta
         \end{equation}
         \item \texttt{relu}: Applies element-wise rectification $\text{ReLU}(y) = \max(0, y)$;
-        \item \texttt{maxpool} ($3 \times 3$ pool, stride $s = 2$): Reduces spatial dimensions by half.
+        \item \texttt{maxpool} ($3 \times 3$ pool, stride $s = 2$, padding $p = 1$): Reduces spatial dimensions by half.
     \end{itemize}
     
     \begin{figure}[htbp]

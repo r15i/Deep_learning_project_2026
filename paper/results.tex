@@ -3,7 +3,7 @@
 \label{sec:results}
 
 \subsection{Hardware and Execution Setup}
-The experiments and final testing were executed on a dedicated Hyperstack cloud virtual machine equipped with an NVIDIA L40 GPU featuring 48 GB of VRAM. This substantial memory footprint permitted high-throughput parallel training across all configurations. Real-time telemetry, model checkpointing, and comprehensive training/validation metrics were continuously logged and monitored using the Weights \& Biases (W\&B) platform. To ensure strict isolation, the test sets consisted purely of completely unseen subjects, testing true model generalization rather than artificial memorization.
+The experiments and final testing were executed on a dedicated cloud virtual machine provisioned via the Hyperstack platform (\url{https://www.hyperstack.cloud/}), equipped with an NVIDIA L40 GPU featuring 48 GB of VRAM. This substantial memory footprint permitted high-throughput parallel training across all configurations. Real-time telemetry, model checkpointing, and comprehensive training/validation metrics were continuously logged and monitored using the Weights \& Biases (W\&B) platform. To ensure strict isolation, the test sets consisted purely of completely unseen subjects, testing true model generalization rather than artificial memorization.
 
 Detailed instructions for reproducing these environments and invoking the execution scripts can be found in Appendix \ref{sec:usage}.
 

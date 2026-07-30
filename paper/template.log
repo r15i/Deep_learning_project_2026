@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -237,7 +237,11 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count303
 )
-** ATTENTION: Overriding command lockouts (line 22).
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+** ATTENTION: Overriding command lockouts (line 23).
 \c@remark=\count304
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
@@ -246,20 +250,20 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 (./template.aux)
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
@@ -285,7 +289,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-0.
+1.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -376,6 +380,9 @@ l
  []
 
 ) (./results.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <./figures/loss_activity_combined.png, id=39, 722.7pt x 433.62pt>
 File: ./figures/loss_activity_combined.png Graphic file (type png)
 <use ./figures/loss_activity_combined.png>
@@ -396,7 +403,7 @@ Overfull \hbox (22.58269pt too wide) in paragraph at lines 49--63
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5 <./figures/encoder_architecture.png>]) (./conclusions.tex) (./template.bbl)
+) (./conclusions.tex [5 <./figures/encoder_architecture.png>]) (./template.bbl)
 [6 <./figures/loss_activity_combined.png> <./figures/loss_person_combined.png>]
 <./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.001_d
 o0.5_bs128.png, id=54, 722.7pt x 578.16pt>
@@ -405,7 +412,7 @@ File: ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.
 <use ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.0
 01_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_resnet8_20260730_110146_resnet8_
-activity_ep100_lr0.001_do0.5_bs128.png  used on input line 63.
+activity_ep100_lr0.001_do0.5_bs128.png  used on input line 64.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_lr0.0
 01_do0.5_bs128.png, id=55, 722.7pt x 578.16pt>
@@ -414,7 +421,7 @@ lr0.001_do0.5_bs128.png Graphic file (type png)
 <use ./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_l
 r0.001_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_inception_20260730_114156_incept
-ion_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 67.
+ion_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 68.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep100_l
 r0.001_do0.5_bs128.png, id=56, 722.7pt x 578.16pt>
@@ -423,7 +430,7 @@ File: ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep
 <use ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep1
 00_lr0.001_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_transformer_20260730_112040_tran
-sformer_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 71.
+sformer_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 72.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.001
 _do0.1_bs128.png, id=57, 722.7pt x 578.16pt>
@@ -432,7 +439,7 @@ File: ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr
 <use ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0
 .001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_resnet8_20260730_110149_resnet8
-_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 81.
+_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 82.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep100_lr0
 .001_do0.1_bs128.png, id=58, 722.7pt x 578.16pt>
@@ -441,7 +448,7 @@ File: ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep10
 <use ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep100
 _lr0.001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_inception_20260730_112501_incep
-tion_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 85.
+tion_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 86.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_ep100
 _lr0.001_do0.1_bs128.png, id=59, 722.7pt x 578.16pt>
@@ -450,10 +457,10 @@ ep100_lr0.001_do0.1_bs128.png Graphic file (type png)
 <use ./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_e
 p100_lr0.001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_transformer_20260730_111327_tra
-nsformer_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 89.
+nsformer_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 90.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
+Underfull \hbox (badness 10000) in paragraph at lines 91--91
 []\OT1/ptm/m/n/9 (c) |Trans-former (Per-son
  []
 
@@ -546,10 +553,10 @@ L3 programming layer <2026-01-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 4984 strings out of 469515
- 87996 string characters out of 5470807
- 490452 words of memory out of 5000000
- 33580 multiletter control sequences out of 15000+600000
+ 5068 strings out of 469515
+ 89122 string characters out of 5470807
+ 491611 words of memory out of 5000000
+ 33660 multiletter control sequences out of 15000+600000
  669408 words of font info for 123 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  57i,9n,65p,1208b,475s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -570,7 +577,7 @@ s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb>
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (8 pages, 3973515 bytes).
+Output written on template.pdf (8 pages, 3973399 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream

@@ -136,7 +136,7 @@ job-all: ## Run activity and person_id jobs using ResNet8 locally (with low VRAM
 	$(MAKE) job-person-id BATCH_SIZE=64 FULLVRAM=0
 
 compile-paper: ## Compile the project report PDF
-	cd paper && pdflatex template.tex && bibtex template || true && pdflatex template.tex && pdflatex template.tex
+	cd paper && pdflatex template.tex && bibtex template || true && pdflatex template.tex && pdflatex template.tex && xdg-open template.pdf
 
 
 

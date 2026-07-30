@@ -47,46 +47,10 @@ Resnet architecture, Human Activity Recognition, Classification task, SHARP, Dop
 \input{conclusions}
 
 \appendices
-\section{Supplementary Training Logs and Metrics}
+\section{Confusion Matrices}
 \label{sec:appendix}
 
-This appendix provides the training and validation loss/accuracy curves for the best performing model (ResNet8) on both tasks, as well as the complete set of confusion matrices for all architectures across both tasks.
-
-\subsection{Training and Validation Performance}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{loss_activity_combined.png}
-\caption{Combined Training and Validation Loss for Activity Recognition (Hyperstack Runs).}
-\label{fig:loss_activity_combined}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{loss_person_combined.png}
-\caption{Combined Training and Validation Loss for Person Identification (Hyperstack Runs).}
-\label{fig:loss_person_combined}
-\end{figure}
-
-\begin{table}[h]
-\centering
-\caption{Comprehensive Train, Val, and Test Metrics}
-\begin{tabular}{|l|l|c|c|c|l|}
-\hline
-\textbf{Task} & \textbf{Architecture} & \textbf{Train Acc} & \textbf{Val Acc} & \textbf{Test Acc} & \textbf{Status} \\
-\hline
-Activity & ResNet8 & $100.0\%$ & $98.7\%$ & $85.8\%$ & Converged \\
-Activity & Inception & $99.0\%$ & $99.9\%$ & $83.6\%$ & Converged \\
-Activity & Transformer & $99.9\%$ & $91.9\%$ & $62.9\%$ & Overfitted \\
-\hline
-Person ID & ResNet8 & $92.8\%$ & $91.7\%$ & $83.5\%$ & Converged \\
-Person ID & Inception & $92.3\%$ & $86.4\%$ & $80.5\%$ & Converged \\
-Person ID & Transformer & $93.1\%$ & $85.2\%$ & $69.4\%$ & Overfitted \\
-\hline
-\end{tabular}
-\label{tab:metrics_appendix}
-\end{table}
-
-\subsection{Confusion Matrices}
+This appendix provides the complete set of confusion matrices for all architectures across both the Activity Recognition and Person Identification tasks.
 
 \begin{figure}[htbp]
 \centering

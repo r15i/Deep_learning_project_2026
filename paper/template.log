@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,28 +375,28 @@ Underfull \hbox (badness 1708) in paragraph at lines 98--99
 l
  []
 
-) (./results.tex [5 <./figures/encoder_architecture.png>]) (./conclusions.tex)
-Underfull \hbox (badness 5741) in paragraph at lines 53--54
-[]\OT1/ptm/m/n/10 This ap-pendix pro-vides the train-ing and val-i-da-tion
- []
-
-<./figures/loss_activity_combined.png, id=47, 722.7pt x 433.62pt>
+) (./results.tex
+<./figures/loss_activity_combined.png, id=39, 722.7pt x 433.62pt>
 File: ./figures/loss_activity_combined.png Graphic file (type png)
 <use ./figures/loss_activity_combined.png>
 Package pdftex.def Info: ./figures/loss_activity_combined.png  used on input li
-ne 58.
+ne 34.
 (pdftex.def)             Requested size: 252.0pt x 151.20026pt.
-<./figures/loss_person_combined.png, id=48, 722.7pt x 433.62pt>
+<./figures/loss_person_combined.png, id=40, 722.7pt x 433.62pt>
 File: ./figures/loss_person_combined.png Graphic file (type png)
 <use ./figures/loss_person_combined.png>
 Package pdftex.def Info: ./figures/loss_person_combined.png  used on input line
- 65.
+ 41.
 (pdftex.def)             Requested size: 252.0pt x 151.20026pt.
 
-Overfull \hbox (22.58269pt too wide) in paragraph at lines 73--87
+Overfull \hbox (22.58269pt too wide) in paragraph at lines 49--63
  [][] 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./figures/encoder_architecture.png>]) (./conclusions.tex)
 <./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.001_d
 o0.5_bs128.png, id=49, 722.7pt x 578.16pt>
 File: ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.
@@ -404,7 +404,7 @@ File: ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.
 <use ./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.0
 01_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_resnet8_20260730_110146_resnet8_
-activity_ep100_lr0.001_do0.5_bs128.png  used on input line 94.
+activity_ep100_lr0.001_do0.5_bs128.png  used on input line 58.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_lr0.0
 01_do0.5_bs128.png, id=50, 722.7pt x 578.16pt>
@@ -413,7 +413,7 @@ lr0.001_do0.5_bs128.png Graphic file (type png)
 <use ./figures/cm_activity_inception_20260730_114156_inception_activity_ep100_l
 r0.001_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_inception_20260730_114156_incept
-ion_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 98.
+ion_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 62.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep100_l
 r0.001_do0.5_bs128.png, id=51, 722.7pt x 578.16pt>
@@ -422,7 +422,7 @@ File: ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep
 <use ./figures/cm_activity_transformer_20260730_112040_transformer_activity_ep1
 00_lr0.001_do0.5_bs128.png>
 Package pdftex.def Info: ./figures/cm_activity_transformer_20260730_112040_tran
-sformer_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 102.
+sformer_activity_ep100_lr0.001_do0.5_bs128.png  used on input line 66.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.001
 _do0.1_bs128.png, id=52, 722.7pt x 578.16pt>
@@ -431,7 +431,7 @@ File: ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr
 <use ./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0
 .001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_resnet8_20260730_110149_resnet8
-_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 112.
+_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 76.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep100_lr0
 .001_do0.1_bs128.png, id=53, 722.7pt x 578.16pt>
@@ -440,7 +440,7 @@ File: ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep10
 <use ./figures/cm_person_id_inception_20260730_112501_inception_person_id_ep100
 _lr0.001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_inception_20260730_112501_incep
-tion_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 116.
+tion_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 80.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 <./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_ep100
 _lr0.001_do0.1_bs128.png, id=54, 722.7pt x 578.16pt>
@@ -449,10 +449,10 @@ ep100_lr0.001_do0.1_bs128.png Graphic file (type png)
 <use ./figures/cm_person_id_transformer_20260730_111327_transformer_person_id_e
 p100_lr0.001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_transformer_20260730_111327_tra
-nsformer_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 120.
+nsformer_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 84.
 (pdftex.def)             Requested size: 100.79846pt x 80.63307pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--121
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
 []\OT1/ptm/m/n/9 (c) |Trans-former (Per-son
  []
 
@@ -545,7 +545,7 @@ L3 programming layer <2026-01-19>
 Here is how much of TeX's memory you used:
  4984 strings out of 469515
  87996 string characters out of 5470807
- 487452 words of memory out of 5000000
+ 490452 words of memory out of 5000000
  33580 multiletter control sequences out of 15000+600000
  669408 words of font info for 123 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -567,7 +567,7 @@ s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb>
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (7 pages, 3973345 bytes).
+Output written on template.pdf (7 pages, 3973153 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  83 compressed objects within 1 object stream

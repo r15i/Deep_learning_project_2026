@@ -17,4 +17,3 @@ remote_exec/logs/
 remote_exec/__pycache__/
 output.txt
 .DS_Store
-/dataset

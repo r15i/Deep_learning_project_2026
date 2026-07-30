@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.7.30)  30 JUL 2026 20:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -298,24 +298,24 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 File: ./figures/processing_pipeline.png Graphic file (type png)
 <use ./figures/processing_pipeline.png>
 Package pdftex.def Info: ./figures/processing_pipeline.png  used on input line 
-6.
+7.
 (pdftex.def)             Requested size: 252.0pt x 83.99738pt.
 
-Underfull \hbox (badness 2181) in paragraph at lines 14--15
+Underfull \hbox (badness 2181) in paragraph at lines 15--16
 []\OT1/ptm/b/n/10 Phase san-i-ti-za-tion and com-put-ing the Doppler
  []
 
 <./figures/labels.png, id=11, 1091.277pt x 232.4685pt>
 File: ./figures/labels.png Graphic file (type png)
 <use ./figures/labels.png>
-Package pdftex.def Info: ./figures/labels.png  used on input line 23.
+Package pdftex.def Info: ./figures/labels.png  used on input line 24.
 (pdftex.def)             Requested size: 252.0pt x 53.67946pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -451,65 +451,71 @@ p100_lr0.001_do0.1_bs128.png>
 Package pdftex.def Info: ./figures/cm_person_id_transformer_20260730_111327_tra
 nsformer_person_id_ep100_lr0.001_do0.1_bs128.png  used on input line 120.
 (pdftex.def)             Requested size: 113.39923pt x 90.71661pt.
-(./usage.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+(./usage.tex [6 <./figures/loss_activity_combined.png> <./figures/loss_person_c
+ombined.png> <./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep
+100_lr0.001_do0.5_bs128.png> <./figures/cm_activity_inception_20260730_114156_i
+nception_activity_ep100_lr0.001_do0.5_bs128.png> <./figures/cm_activity_transfo
+rmer_20260730_112040_transformer_activity_ep100_lr0.001_do0.5_bs128.png>]
+[7
+
+ <./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.00
+1_do0.1_bs128.png> <./figures/cm_person_id_inception_20260730_112501_inception_
+person_id_ep100_lr0.001_do0.1_bs128.png> <./figures/cm_person_id_transformer_20
+260730_111327_transformer_person_id_ep100_lr0.001_do0.1_bs128.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 []\OT1/ptm/b/n/10 Hyperstack Cloud Docker: \OT1/ptm/m/n/10 Uses the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 \OT1/pcr/b/n/10 remote_exec/deploy.py \OT1/ptm/m/n/10 script to se-curely
  []
 
 
-Underfull \hbox (badness 6625) in paragraph at lines 12--13
+Underfull \hbox (badness 6625) in paragraph at lines 13--14
 \OT1/ptm/m/n/10 con-nect, syn-chro-nize the lo-cal code-base to the
  []
 
 
-Underfull \hbox (badness 3657) in paragraph at lines 12--13
+Underfull \hbox (badness 3657) in paragraph at lines 13--14
 \OT1/ptm/m/n/10 cloud via \OT1/pcr/b/n/10 rsync\OT1/ptm/m/n/10 , and dy-nam-i-c
 ally pro-vi-sion or
  []
 
-[6 <./figures/loss_activity_combined.png> <./figures/loss_person_combined.png> 
-<./figures/cm_activity_resnet8_20260730_110146_resnet8_activity_ep100_lr0.001_d
-o0.5_bs128.png> <./figures/cm_activity_inception_20260730_114156_inception_acti
-vity_ep100_lr0.001_do0.5_bs128.png> <./figures/cm_activity_transformer_20260730
-_112040_transformer_activity_ep100_lr0.001_do0.5_bs128.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 []\OT1/pcr/m/n/10 train.py\OT1/ptm/m/n/10 : The pri-mary train-ing pipeline. It
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 \OT1/ptm/m/n/10 dy-nam-i-cally parses ar-gu-ments for ar-chi-tec-ture
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 \OT1/ptm/m/n/10 (\OT1/pcr/m/n/10 resnet8\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 incep
 tion\OT1/ptm/m/n/10 , \OT1/pcr/m/n/10 transformer\OT1/ptm/m/n/10 ), task
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 []\OT1/pcr/m/n/10 check_wandb.py \OT1/ptm/m/n/10 &
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 20--21
+Underfull \hbox (badness 2165) in paragraph at lines 21--22
 \OT1/ptm/m/n/10 that query the Weights & Bi-ases API to re-trieve
  []
 
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 26--32
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 27--33
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 []\OT1/pcr/b/n/10 make pull-hyperstack\OT1/ptm/m/n/10 : Re-trieves all trained
  []
 
@@ -525,11 +531,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7 <./figures/cm_person_id_resnet8_20260730_110149_resnet8_person_id_ep100_lr0.
-001_do0.1_bs128.png> <./figures/cm_person_id_inception_20260730_112501_inceptio
-n_person_id_ep100_lr0.001_do0.1_bs128.png> <./figures/cm_person_id_transformer_
-20260730_111327_transformer_person_id_ep100_lr0.001_do0.1_bs128.png>]
-(./template.aux)
+[8
+
+] (./template.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
@@ -560,10 +564,10 @@ s/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb>
 t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
 /utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on template.pdf (7 pages, 3973543 bytes).
+Output written on template.pdf (8 pages, 3973633 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 162 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

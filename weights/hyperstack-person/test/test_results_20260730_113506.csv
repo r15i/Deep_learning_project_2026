@@ -1,0 +1,2 @@
+File,Task,Architecture,Dropout,Batch_Size,Loss,Accuracy,Precision,Recall,F1
+20260730_112501_inception_person_id_ep100_lr0.001_do0.1_bs128.pth,person_id,inception,0.1,32,0.33622968433932826,0.8050028425241614,0.8036724956861971,0.8050028425241614,0.8041093869249243

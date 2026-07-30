@@ -1,0 +1,2 @@
+File,Task,Architecture,Dropout,Batch_Size,Loss,Accuracy,Precision,Recall,F1
+20260730_110146_resnet8_activity_ep100_lr0.001_do0.5_bs128.pth,activity,resnet8,0.5,32,0.4477115011516404,0.8578871522004212,0.8654807567216368,0.8578871522004212,0.8571062018807382

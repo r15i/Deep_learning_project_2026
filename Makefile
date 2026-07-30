@@ -125,25 +125,15 @@ job-resnet8: ## Train and test ResNet8 for the active TASK
 	$(MAKE) train ARCH=resnet8 TASK=$(TASK)
 	$(MAKE) test-latest ARCH=resnet8 TASK=$(TASK)
 
-job-transformer: ## Train and test Transformer for the active TASK
-	$(MAKE) train ARCH=transformer TASK=$(TASK)
-	$(MAKE) test-latest ARCH=transformer TASK=$(TASK)
-
-job-inception: ## Train and test SHARP Inception baseline for the active TASK
-	$(MAKE) train ARCH=inception TASK=$(TASK)
-	$(MAKE) test-latest ARCH=inception TASK=$(TASK)
-
-job-activity: ## Train and test ALL architectures (ResNet8, Transformer, Inception) for Activity Recognition
+job-activity: ## Train and test ResNet8 for Activity Recognition
 	$(MAKE) job-resnet8 TASK=activity
-	$(MAKE) job-transformer TASK=activity
-	$(MAKE) job-inception TASK=activity
 
-job-person-id: ## Train and test ALL architectures (ResNet8, Transformer, Inception) for Person Identification
+job-person-id: ## Train and test ResNet8 for Person Identification
 	$(MAKE) job-resnet8 TASK=person_id
-	$(MAKE) job-transformer TASK=person_id
-	$(MAKE) job-inception TASK=person_id
 
-job-all: job-activity job-person-id ## Run activity and person_id jobs across all architectures
+job-all: ## Run activity and person_id jobs using ResNet8 locally (with low VRAM usage)
+	$(MAKE) job-activity BATCH_SIZE=64 FULLVRAM=0
+	$(MAKE) job-person-id BATCH_SIZE=64 FULLVRAM=0
 
 compile-paper: ## Compile the project report PDF
 	cd paper && pdflatex template.tex && bibtex template || true && pdflatex template.tex && pdflatex template.tex
@@ -186,8 +176,7 @@ nndl-reup-local: clean-local train-local ## Restart local nndl worker container
 
 # ── Hyperstack base & parallel targets ──
 .PHONY: train-hyperstack test-hyperstack pull-hyperstack pull-results-hyperstack \
-        all-hyperstack hyperstack1 hyperstack2 hyperstack-parallel \
-        pull-hyperstack1 pull-results-hyperstack1 pull-hyperstack2 pull-results-hyperstack2
+        all-hyperstack hyperstack-activity hyperstack-person-id
 
 train-hyperstack: docker-push ## Train single configuration on Hyperstack cloud
 	@echo "Training on $(MACHINE)..."
@@ -211,13 +200,13 @@ all-hyperstack: docker-push ## Run job-all sequentially on single Hyperstack VM
 	uv run python remote_exec/deploy.py download --machine $(MACHINE) --dest $(WEIGHTS_DIR)/$(MACHINE)/ --subpath $(MACHINE)/test
 	uv run python remote_exec/deploy.py download --machine $(MACHINE) --dest $(WEIGHTS_DIR)
 
-hyperstack-activity: ## Run job-activity (ResNet8, Transformer, Inception) on Hyperstack
+hyperstack-activity: ## Run job-activity (ResNet8) on Hyperstack
 	@echo "Training and evaluating job-activity on hyperstack-activity..."
 	DEPLOY_STATE_FILE=remote_state_hyperstack-activity.json HYPERSTACK_ENVIRONMENT=test HYPERSTACK_FLAVOR=n3-L40x1-spot uv run python remote_exec/deploy.py execute --machine hyperstack-activity --target job-activity EPOCHS=$(EPOCHS) BATCH_SIZE=$(BATCH_SIZE) LR=$(LR) DROPOUT=$(DROPOUT) NUM_WORKERS=8 FULLVRAM=0 ENV_NAME=hyperstack-activity
 	DEPLOY_STATE_FILE=remote_state_hyperstack-activity.json uv run python remote_exec/deploy.py download --machine hyperstack-activity --dest $(WEIGHTS_DIR)/hyperstack-activity/ --subpath hyperstack-activity/test
 	DEPLOY_STATE_FILE=remote_state_hyperstack-activity.json uv run python remote_exec/deploy.py download --machine hyperstack-activity --dest $(WEIGHTS_DIR)
 
-hyperstack-person-id: ## Run job-person-id (ResNet8, Transformer, Inception) on Hyperstack
+hyperstack-person-id: ## Run job-person-id (ResNet8) on Hyperstack
 	@echo "Training and evaluating job-person-id on hyperstack-person..."
 	DEPLOY_STATE_FILE=remote_state_hyperstack-person.json HYPERSTACK_ENVIRONMENT=test HYPERSTACK_FLAVOR=n3-L40x1-spot uv run python remote_exec/deploy.py execute --machine hyperstack-person --target job-person-id EPOCHS=$(EPOCHS) BATCH_SIZE=$(BATCH_SIZE) LR=$(LR) DROPOUT=0.1 NUM_WORKERS=8 FULLVRAM=1 ENV_NAME=hyperstack-person
 	DEPLOY_STATE_FILE=remote_state_hyperstack-person.json uv run python remote_exec/deploy.py download --machine hyperstack-person --dest $(WEIGHTS_DIR)/hyperstack-person/ --subpath hyperstack-person/test

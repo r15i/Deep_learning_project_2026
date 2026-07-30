@@ -1,0 +1,2 @@
+File,Task,Architecture,Dropout,Batch_Size,Loss,Accuracy,Precision,Recall,F1
+20260730_112040_transformer_activity_ep100_lr0.001_do0.5_bs128.pth,activity,transformer,0.5,32,1.1240194518951343,0.6294202416583528,0.7264621181920027,0.6294202416583528,0.6160767194617933
